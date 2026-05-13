@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Wanted Gang</title>
+
+<style>
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#050505;
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+/ พื้นหลัง grid /
+body::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+
+    background-size:40px 40px;
+    z-index:-1;
+}
+
+/ กล่องหลัก /
+.container{
+    width:350px;
+    text-align:center;
+}
+
+/ โลโก้ /
+.logo{
+    width:130px;
+    height:130px;
+    border-radius:25px;
+    object-fit:cover;
+    margin-bottom:25px;
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.15);
+}
+
+/ ชื่อ /
+h1{
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.desc{
+    color:#999;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+/ ปุ่ม */
+.link-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:100%;
+    height:75px;
+
+    background:white;
+    color:black;
+
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+
+    border-radius:22px;
+
+    margin-bottom:20px;
+
+    transition:0.25s;
+}
+
+.link-btn:hover{
+    transform:scale(1.03);
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.4);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.jpg" class="logo">
+
+<h1>Wanted Gang</h1>
+
+<div class="desc">
+Oc One Hundred Per
+</div>
+
+<a class="link-btn"
+href="Sagorfiw Wasted"
+target="_blank">
+👥 Members
+</a>
+
+<a class="link-btn"
+href="https://www.facebook.com/profile.php?id=61572145379953"
+target="_blank">
+📘 Facebook
+</a>
+
+<a class="link-btn"
+href="https://instagram.com/ชื่อไอจี"
+target="_blank">
+📸 Instagram
+</a>
+
+</div>
+
+</body>
+</html>
